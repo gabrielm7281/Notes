@@ -1,0 +1,15 @@
+.callout {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.notation {
+    overflow: scroll;
+    line-height: 25px;
+}
+
+.middle {
+
+    height: 350px;
+}
+
