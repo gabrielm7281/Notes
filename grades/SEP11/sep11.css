@@ -1,0 +1,10 @@
+.content {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(177, 179, 179);
+    padding: 10px;
+}
+.button{
+    border-radius: 10px;
+}

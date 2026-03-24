@@ -13,3 +13,8 @@
     height: 350px;
 }
 
+.note {
+    color: gray;
+    font-size: 12px;
+    font-style: italic
+}
