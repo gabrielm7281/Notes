@@ -21,7 +21,7 @@
 
         <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark" >
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Notes
+            <a class="navbar-brand" href="../grades/SEP10/index.html">Github
             <img id="transparent" src= "../notes.png" alt="logo" width= "30" height= "24">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,15 +30,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="../index.html">Main</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Pages
                   </a>
                   <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="basics.html">Basics CS</a></li>
                     <li><a class="dropdown-item" href="advanced-cs.html">Advanced CS</a></li>
-                    <li><a class="dropdown-item" href="github.html">Github</a></li>
                     <li><a class="dropdown-item" href="improvements.html">Improvements</a></li>
                   </ul>
                 </li>
@@ -49,9 +49,9 @@
                     Grades
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">SEP10</a></li>
+                    <li><a class="dropdown-item" href="../grades/SEP10/index.html">SEP10</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">SEP11</a></li>
+                    <li><a class="dropdown-item" href="../grades/SEP11/index.html">SEP11</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">SEP12</a></li>
                   </ul>
@@ -74,39 +74,101 @@
               <p>Github is the central place for every programming project to originally start off in. It is very useful for viewing code and hosting websites, but it is a little limited in its function. The main place to code and get previews of your work is your IDE. Since Github cant run all kinds of languages, you need to have other ways to preview things and that is why you use an IDE to allow for these limitations. From the IDE, you can work on your project even without wifi if it is a local project. That means if it is downloaded and installed onto your device, you can run/edit the program anywhere you want. However you do need wifi to actually push the project onto Github, which is where it is publicly availible, and where you can put it onto a website. You can push (move from computer to Github), pull (from Github to IDE) and fork (copy someone elses project) into the IDE.
                  You can push and pull from a central place and Github merges the two saves together once everything is loaded.</p>
 
-              <p>Merges: A git merge is when you are working on some code in a local IDE but another piece of code on Github is different. When these two commits are eventually combined, they will automatically merge together but ONLY IF the lines of code are 2 lines apart and don't conflict with each other.</p>
+              <!-- <p>Merges: A git merge is when you are working on some code in a local IDE but another piece of code on Github is different. When these two commits are eventually combined, they will automatically merge together but ONLY IF the lines of code are 2 lines apart and don't conflict with each other.</p>
 
-              <p>Merge Conflict: A merge conflict happens when the above 2 conditions aren't met. Your system might freak out but it isnt very difficult to overcome. To fix a merge conflict you have to choose which one of the lines you want to keep in your repo and re commit and push the code so that the issue is fixed. The SEP IDE might prompt you to resolve the conflict in its merge editor. It is a little more confusing if you use the merge editor but it is still fairly easy to understand</p>
+              <p>Merge Conflict: A merge conflict happens when the above 2 conditions aren't met. Your system might freak out but it isnt very difficult to overcome. To fix a merge conflict you have to choose which one of the lines you want to keep in your repo and re commit and push the code so that the issue is fixed. The SEP IDE might prompt you to resolve the conflict in its merge editor. It is a little more confusing if you use the merge editor but it is still fairly easy to understand</p> -->
             </div>
         </div>
     </div>
-    <div class= "row">
-      <div class= "container">
-        <div class= "callout small">
-          <h4>Basic Commands</h4>
-          <p>The terminal uses many different commands in order to function, but the basic ones are the commands you will use the most.</p>
+
+
+    <div class= "grid-container-fluid">
+      <div class= "grid-x">
+        <div class= "cell small-12 medium-6">
+        <div class= "callout small" style="height: 580px">
+          <h4>Basic Terminal Commands</h4>
+          <p>The terminal has a lot of commands and ways to do things, but there are a few core ones that you should memorize to make navigating the IDE much easier. These are more of navigation aids that help you find files and work with the IDE.</p>
           <ul>
-            <p><code class= "language-html">aihara</code>AUHFOWAN</p>
-            <p>oirhgilq</p>
-            <p>uiewubglq</p>
-            <p>ioran;g;</p>
-            <p>fjpewahfunwal</p>
+            <p><code>Up Arrow</code> Shows previous command</p>
+            <p><code>Ctrl C, D, X</code> Cancels actions such as HTTP-Server</p>
+            <p><code>Ctrl V</code> Preview .md documents such as writeups and blogs. </p>
+            <p><code>pwd</code> Shows file path from where you are</p>
+            <p><code>ls</code> Lists all the files in the folder you are in</p>
+            <p><code>http-server</code> Makes a temporary website to preview code that you are working on</p>
           </ul>
         </div>
+        </div>
+
+
+
+
+
+
+      <div class= "cell small-12 medium-6">
+        <div class= "callout small" style="height: 580px">
+          <h4>Basic Git Commands</h4>
+          <p>Since the IDE works with Github, you need to use Git commands to "talk" with the cloud servers. These are different from the Terminal commands and are more about saving and moving your work rather than creating and editing files. These are the more basic, common commands you will use.</p>
+          <ul>
+            <p><code>git clone SSH</code> Clones the repo into the IDE so you can work on it from there (Plug in SSH code into SSH for it to work)</p>
+            <p><code>git add .</code> Tells the IDE to "add" files to the staging ground. The dot can be replaced with a specific file but otherwise it will just add the entire folder</p>
+            <p><code>git commit -m "message"</code> Commit tells the IDE that the files are ready to be pushed to the Github servers. You need to attach a commit message, and it is good habit to give a quick sumamry of what is included in the commit</p>
+            <p><code>git push</code> Pushes the committed files into the Github Repo for public viewing.</p>
+            <p><code>git status</code> It shows what has been added and committed using yellow and green colors</p>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+
+     </div>
+    </div>
+
+    <div class= "grid-container-fluid">
+      <div class= "grid-x">
+
+        <div class= "cell small-12 medium-6">
+          <div class= "callout small middle" style="height: 560px">
+            <h4>Advanced Terminal Commands</h4>
+            <p>These commands are more advanced and are more for creating and moving around files in your IDE. It covers all kinds of file types, and makes sub folders inside of parent folders.</p>
+            <ul>
+              <p><code>mkdir</code> This makes a folder/directory.</p>
+              <p><code>rmdir</code> This removes a folder/directory</p>
+              <p><code>rm</code> This removes a file as long as it is empty</p>
+              <p><code>rm -rf</code> This can remove all of the content inside of a folder, unlike rm or rmdir</p>
+              <p><code>mv</code> This can both rename and move a folder or file. Writing the file name, and then a file path will move it, but writing the file name and another file name will rename it to the second file name.</p>
+            </ul>
+          </div>
+        </div>
+
+        <div class= "cell small-12 medium-6">
+          <div class= "callout small" style="height: 560px">
+            <h4>Advanced Git Commands</h4>
+            <p>There are several more commands that arent as important, but are still very useful to know just in case. These mostly cover going back to other versions of a file (seeing its history), and it is pretty important when working on large projects.</p>
+            <ul>
+              <p><code>git diff</code> It shows what you have added or removed from the file</p>
+              <p><code>git log</code> Tracks and shows all of the commits you have made to the repo</p>
+              <p><code>git revert SHA</code> Reverts the file back to a previuos commit using the SHA code, which can be found in commit history on Github</p>
+              <p><code>git revert HEAD</code> Makes the file go back to the previous commit</p>
+              <p><code>git restore file</code> Resets a file back to its original commit</p>
+              <p><code>git restore --staged "file"</code> Takes back a file that has already been staged and committed</p>
+            </ul>
+          </div>
+        </div>
+
+
       </div>
     </div>
 
 
 
 
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        
+
             // JS
             <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
 
-        
+
     </body>
 </html>

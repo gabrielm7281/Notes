@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="subjects.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+        <style>
+            /* CSS */
+
+        </style>
+
+        <title>Title</title>
+    </head>
+    <body>
+    <!--HTML-->
+
+   <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../grades/SEP11/index.html">Basics JS
+          <img id="transparent" src= "../notes.png" alt="logo" width= "30" height= "24">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="arrays.html">Arrays</a></li>
+                  <li><a class="dropdown-item" href="functions.html">Functions</a></li>
+                  <li><a class="dropdown-item" href="conditionals.html">Conditionals</a></li>
+                  <li><a class="dropdown-item" href="loops.html">Loops</a></li>
+                  <li><a class= "dropdown-item" href="dom.html">DOM</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Grades
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../grades/SEP10/index.html">SEP10</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../grades/SEP11/index.html">SEP11</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">SEP12</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<!--Cards-->
+<div class= "grid-container-fluid">
+      <div class= "grid-x">
+        
+        <div class= "cell">
+            <div class= "callout small">
+                <h4>General Knowledge</h4>
+                <p>Javascript is a coding language that is very popular among web developers. It allows for quick coding that allows websites to have functionality behind the HTML and CSS such as a search bar or making todo lists. It is very useful and can be found in almost any corner of the internet. It is fairly simple as well and doesnt take too many basic concepts to get going with it.</p>
+                <p>It can store and use information from the HTML or CSS and has the capability to transfer it across other pages. There are "global" ways to do this, which can keep information on a higher level (and can be used anywhere), versus a "local" version of this, which can only be used within specific lines of code or just on the page itself. These are called variables, and they are the backbone of JS. Everything uses them in some form.
+                </p>
+                <p>All types of code can be used with the other types. Arrays hold information such as strings and integers, and can be changed and shuffled around. Condtionals are a way to run code based on if something is true, or has a certain value. There are many different ways to use them, as with everything else. The DOM can edit HTML based on user inputs or based certain conditions just like conditionals. Functions can hold lines of code to be used for later. Loops can repeat code and can list through arrays.</p>
+            </div>
+        </div>
+
+        <!-- Cards -->
+         <div class = "cell small-6">
+          <div class = "callout small middle">
+            <h4>Variables</h4>
+            <p>Variables are a way to store and use information. You can set it equal to something, and if you need that number later, it will be there in the form of the variable. There are 3 main ways to write it: <code class = "language-js">var, let and const</code>. <code class = "language-js">var</code> is the oldest and can be declared or assigned to something else at any point in time. <code class = "language-js">let</code> is about the same, except that it cant be redeclared, you will need a new variable. <code class = "language-js">const</code> is for something you dont want to be changed at all. It cannot be updated or redeclared like the other two.</p>
+            <p class = "note">It is best to use <b>const</b> for things that shouldnt be changed and <b>let</b> for everything else</p>
+          </div>
+         </div>
+
+         <div class = "cell small-6">
+          <div class = "callout small middle">
+            <h4>Math and Operations</h4>
+            <p>JS supports basic math to be done within its code. You can do addition(+), subtraction(-), multiplication(*) and division(/). There is also something called <b>"mod"</b> which finds the remainder of a certain operation. Math can be stored within a variable because the variable will keep the product of whatever the operation is. This means you can have entire equations as variables, or do math with variables.</p>
+            <p>Since you can change around variables (only var and let), you can add and subtract from them. This is very common in loops and conditionals. The best way to do it is with the shortcut: <code class = "language-js">+=</code>. This adds the following number/variable onto the original variable. For example, if <b>var showing</b> was equal to 2: <code class = "language-js">var showing += 3</code> this would make <b>showing</b> equal to 5</p> 
+          </div>
+         </div>
+
+         <div class="cell">
+          <div class="callout small">
+            <h4>Strings</h4>
+            <p>Strings are a way to have words in JS. They can hold letters instead of numbers, and can be placed into variables. They must be wrapped in quotes in order for JS to recognize them. They can be placed in variables or arrays, and are very useful for printing things out in the DOM. They can be put together through conecactanation. By writing out the string, either inside its variable or on its own, you can write: <code class= "language-js">console.log(string1 + " the addon")</code>. The console will show whatever is in string 1 and have " the addon" afterwards. <i class= "note">It is very important you have a space in the second string, otherwise they will be smushed together</i></p>
+            <p>You can also take different pieces of a string. Using <b>string1.substring()</b>, you can take a piece of the string inside string1. Since each character is counted from 0, taking the first 3 letters of string1 would look like: <code class= "language-js">console.log(string1.substring(0, 4))</code>. The last number is the value of the letter that you <b>dont</b> want since it is offset by 1. You can also use <b>.repeat()</b> to repeat the string without having to rewrite it each time. You can input the amount of times you want it to be repeated, either manually or with a variable. It can be used as: <code class= "language-js">string1.repeat(n)</code>. <b>n</b> can be a certain number, and string1 will repeat by n times.<i class= "note"> For Loops are useful for counting n</i></p>
+          </div>
+         </div>
+
+      </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // JS
+            <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+
+    </body>
+</html>
+
+
