@@ -41,7 +41,6 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="basicsJS.html">Basics</a></li>
-                  <li><a class="dropdown-item" href="functions.html">Functions</a></li>
                   <li><a class="dropdown-item" href="conditionals.html">Conditionals</a></li>
                   <li><a class="dropdown-item" href="loops.html">Loops</a></li>
                   <li><a class= "dropdown-item" href="dom.html">DOM</a></li>
@@ -75,10 +74,30 @@
             <div class= "cell">
                 <div class= "callout small">
                     <h4>General Knowledge</h4>
-                    <p>Arrays are a way to hold multiple different variables, strings or numbers. They are basically a dynamic list that can be used and changed as needed. </p>
+                    <p>Arrays are a way to hold multiple different variables, strings or numbers. They are basically a dynamic list that can be used and changed as needed. The way to have a list without arrays would be to have each value in a seperate value such as: <code class= "language-js">value1= 1 value2 = 2</code>, but an array can hold both of these in one variable by: <code class= "language-js">array= [1, 2, 3]</code>. To access each value, write: <code class= "language-js">array1[1]</code> This gets the second value because an array counts from 0.</p>
                 </div>
             </div>
 
+            <div class= "cell small-6">
+              <div class= "callout small" style="height: 250px">
+                <h4>Editing Arrays</h4>
+                <p>There are a few different ways to change an array. They are best used with conditionals and functions so that they can be repeated</p>
+                <ul>
+                  <li><code class= "language-js">array.push([])</code> adds onto the back of the array</li>
+                  <li><code class= "language-js">array.unshift([])</code> adds onto the front of the array</li>
+                  <li><code class= "language-js">array.pop([])</code> takes away from the back of the array</li>
+                  <li><code class= "language-js">array.shift([])</code> take away from the front of the array</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class= "cell small-6">
+              <div class= "callout small" style="height: 250px">
+                <h4>Nested Arrays</h4>
+                <p>Arrays can contain extra arrays within itself. There can be as many different arrays as you want, and they all act the same way. To access it, write: <code class= "language-js">array1[first array index][nested array index]</code>. The first index gets the array position, and then the second index gets the value of whatever you are searching for in the nested array.</p>
+                <p><code class= "language-js">.split([i])</code> can take a specific element out of an array and saves it somewhere else. <i class="note">This is best used with a variable to access it easier</i></p>
+              </div>
+            </div>
 
         </div>
        </div>

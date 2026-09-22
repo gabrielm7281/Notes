@@ -1,7 +1,14 @@
+.menu {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+} 
+
+
 .content {
     border-style: solid;
     border-width: 1px;
-    border-radius: 5px;
+    border-radius: 12px;
     border-color: rgb(177, 179, 179);
     padding: 10px;
 }
